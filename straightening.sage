@@ -151,7 +151,7 @@ class Straightener:
         f -= self.r(a, b, s1, s2) * SphericalFunction([c],[s3])
         return f
     ###########################################################################
-    # Define the elements in [FJ spherical functions, Proposition 4.7]        #
+    # Define the elements in [FJ spherical functions, Proposition 4.2.7]      #
     ###########################################################################
     def rFS(self, a, s):
         assert a < 0
@@ -225,7 +225,7 @@ class Straightener:
     ###########################################################################
     # Implements the straightening maps in                                    #
     # [Hironaka's Conjecture, Proposition 4.11] and                           #
-    # [FJ spherical functions, Proposition 4.7]                               #
+    # [FJ spherical functions, Proposition 4.2.7]                             #
     ###########################################################################
     # straighten the function f = {term:1}
     def straightenTerm(self, e, s):
@@ -294,7 +294,7 @@ S = Straightener('A','natural')
 assert S.straighten( S.D([0,1,2]) ) == SphericalFunction()
 
 ##############################################################################
-# Verifies the end of the proof of [FJ spherical functions, Proposition 4.7] #
+#Verifies the end of the proof of [FJ spherical functions, Proposition 4.2.7]#
 ##############################################################################
 
 S = Straightener('uH','flat')
